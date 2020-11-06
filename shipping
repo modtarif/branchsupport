@@ -1,0 +1,13 @@
+curl https://api.stripe.com/v1/orders \
+  -u sk_test_ktAul6e6m7YsX2AQ0clhZOtd00j3MO6LCy: \
+  -d currency=usd \
+  -d email="jenny.rosen@example.com" \
+  -d "items[][type]"=sku \
+  -d "items[][parent]"=sku_IL1rPc9zwui2P8 \
+  -d "items[][quantity]"=2 \
+  -d "shipping[name]"="Jenny Rosen" \
+  -d "shipping[address][line1]"="1234 Main Street" \
+  -d "shipping[address][city]"="San Francisco" \
+  -d "shipping[address][state]"=CA \
+  -d "shipping[address][postal_code]"=94111 \
+  -d "shipping[address][country]"=US
